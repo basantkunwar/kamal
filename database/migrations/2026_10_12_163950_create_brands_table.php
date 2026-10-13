@@ -13,6 +13,21 @@ return new class extends Migration
     {
         Schema::create('brands', function (Blueprint $table) {
             $table->id();
+                     // Basic information
+            $table->string('name');
+            $table->string('slug')->unique();
+            $table->longtext('description')->nullable();
+
+            // Parent category for subcategories
+          
+
+            // Image path
+            $table->string('image')->nullable();
+
+            // Status and ordering
+            $table->boolean('status')->default(true);
+            $table->unsignedInteger('sort_order')->default(0);
+
             $table->timestamps();
         });
     }

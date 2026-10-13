@@ -172,7 +172,7 @@
                 </div>
 
             </div>
-            <a href=""
+            <a href="{{route('admin.category.index')}}"
                 class="flex items-center gap-3 px-5 py-3 rounded-xl hover:bg-white/10 hover:translate-x-1 transition-all duration-300">
              <i class="fa-solid fa-tags"></i> Categories
             </a>
@@ -277,7 +277,7 @@
 
 
 
- <a href=""
+ <a href="{{route('admin.brand.index')}}"
  class="flex items-center gap-3 px-5 py-3 rounded-xl hover:bg-white/10 hover:translate-x-1 transition-all duration-300">
 <i class="fa-solid fa-star"></i> Brands
  </a>
