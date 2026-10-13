@@ -72,7 +72,7 @@
                         @enderror
                     </div>
 
-                    <div>
+                    {{-- <div>
                         <label for="slug" class="mb-2 block text-sm font-medium text-slate-700">
                             Slug <span class="text-red-500">*</span>
                         </label>
@@ -86,7 +86,7 @@
                         @error('slug')
                             <p class="mt-1 text-xs text-red-500">{{ $message }}</p>
                         @enderror
-                    </div>
+                    </div> --}}
                 </div>
                 {{-- Description --}}
                 <div>

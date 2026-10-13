@@ -31,13 +31,13 @@ class BrandRequest extends FormRequest
         'unique:categories,name',
     ],
 
-    'slug' => [
-        'required',
-        'string',
-        'max:120',
-        'alpha_dash',
-        'unique:categories,slug',
-    ],
+    // 'slug' => [
+    //     'required',
+    //     'string',
+    //     'max:120',
+    //     'alpha_dash',
+    //     'unique:categories,slug',
+    // ],
 
     'description' => [
         'nullable',
