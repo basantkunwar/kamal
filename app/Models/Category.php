@@ -25,5 +25,10 @@ protected static function booted(): void
         $category->slug = $slug;
     });
 }
+
+public function products()
+{
+    return $this->hasMany(Product::class);
+}
 }
 

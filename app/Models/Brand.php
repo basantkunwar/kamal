@@ -23,4 +23,9 @@ class Brand extends Model
         $brand->slug = $slug;
     });
 }
+public function products()
+{
+    return $this->hasMany(Product::class);
+}
+
 }

@@ -153,7 +153,7 @@
                     class="ml-8 mt-3 space-y-2 border-l border-white/10 pl-4">
 
                     
- <a href=""
+ <a href="{{route('admin.products.create')}}"
                         class="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/10 rounded-lg transition">
                         <i class="fa-solid fa-plus text-white-500 text-sm"></i> Add products
                     </a>
@@ -163,9 +163,9 @@
                        <i class="fa-solid fa-eye text-white-500 text-sm"></i> view
                     </a>
 
-                    <a href="#"
+                    <a href="{{route('admin.types.create')}}"
                         class="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/10 rounded-lg transition">
-                        ⭐ Reviews
+                    types
                     </a>
 
 
