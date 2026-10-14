@@ -163,7 +163,7 @@
                        <i class="fa-solid fa-eye text-white-500 text-sm"></i> view
                     </a>
 
-                    <a href="{{route('admin.types.create')}}"
+                    <a href="{{route('admin.types.index')}}"
                         class="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/10 rounded-lg transition">
                     types of audiance
                     </a>

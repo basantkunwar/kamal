@@ -12,6 +12,10 @@ class TypesController extends Controller
     public function create(){
         return view('admin.types.create');
     }
+    public function index(){
+        $types=Types::paginate(5);
+        return view('admin.types.index',compact('types'));
+    }
 
     public function store(TypeRequest $request){
         $validate=$request->validated();
