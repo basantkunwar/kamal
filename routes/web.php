@@ -16,6 +16,18 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+
+//contact route
+Route::get('/contact', function () {
+    return view('pages.contact');
+})->name('contact');
+
+//cart route
+Route::view('/cart', 'pages.cart')->name('cart');
+
+//product route
+Route::view('/products', 'pages.products')->name('products');
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');

@@ -87,7 +87,7 @@
                     <a href="#" class="transition hover:text-sky-400">My Orders</a>
                 </li>
                 <li>
-                    <a href="#" class="transition hover:text-sky-400">Shipping Information</a>
+                    <a href="{{ route('contact') }}" wire:navigate class="transition hover:text-sky-400 " >Help & Contact</a>
                 </li>
                 <li>
                     <a href="#" class="transition hover:text-sky-400">Returns & Refunds</a>
