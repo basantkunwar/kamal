@@ -84,7 +84,7 @@
                 <table class="w-full text-left text-sm">
                     <thead class="bg-slate-50 text-xs uppercase tracking-wide text-slate-500">
                         <tr>
-                            <th class="w-16 px-4 py-3 font-semibold">#</th>
+                            <th class="w-16 px-4 py-3 font-semibold">sn</th>
                             <th class="px-4 py-3 font-semibold">Audience Type</th>
                             <th class="px-4 py-3 font-semibold">Description</th>
                             <th class="w-28 px-4 py-3 text-center font-semibold">Status</th>
