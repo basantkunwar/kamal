@@ -5,6 +5,7 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\TypesController;
+use App\Livewire\ContactForm;
 use App\Models\Types;
 use Illuminate\Support\Facades\Route;
 
@@ -18,9 +19,7 @@ Route::get('/dashboard', function () {
 
 
 //contact route
-Route::get('/contact', function () {
-    return view('pages.contact');
-})->name('contact');
+Route::view('/contact', 'pages.contact')->name('contact');
 
 //cart route
 Route::view('/cart', 'pages.cart')->name('cart');
