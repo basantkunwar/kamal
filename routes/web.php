@@ -1,9 +1,11 @@
 <?php
 
+use App\Http\Controllers\AdvertisementController;
 use App\Http\Controllers\BrandController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SliderController;
 use App\Http\Controllers\TypesController;
 use App\Livewire\ContactForm;
 use App\Models\Types;
@@ -64,5 +66,11 @@ route::get('admin/types/{type}/edit', [TypesController::class, 'edit'])->name('a
 route::PUT('admin/types/{type}', [TypesController::class, 'update'])->name('admin.types.update');
 route::delete('admin/types/{type}', [TypesController::class, 'delete'])->name('admin.types.destroy');
 
+// advertisement route
+Route::resource('admin/advertisement', AdvertisementController::class)
+    ->names('admin.advertisement');
+
+// Sider route
+Route::resource('admin/slider', SliderController::class)->names('admin.slider');
 
 require __DIR__.'/auth.php';

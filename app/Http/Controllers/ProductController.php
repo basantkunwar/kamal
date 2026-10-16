@@ -16,7 +16,9 @@ class ProductController extends Controller
         $products=Product::paginate(5);
         return view('admin.products.index',compact('products'));
     }
+
     public function create(){
+        return"page is working";
         $brands = Brand::all();
         $types = Types::all();
         $categories = Category::all();
